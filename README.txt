@@ -7,7 +7,9 @@
 Initial Tremulous Mod Features list - http://knightsofreason.net/forums/viewtopic.php?f=11&t=7910&p=120448#p120647
 
 Site: http://knightsofreason.net/
+Note: I (ZdrytchX) am currently only modifying gameplay, not engine. I am also not the inital developer who made the tremulous mod, I'm just putting phony-features and stuff to get this Unvanquished mod to mimic the KoRx mod from tremulous 1.1.
 
+Other people who wish the help, feel free to contact me and do so. Preferably for this project, contact me via KnightsofReason.net/forums
 
 /*
 ** Unvanquished README:
