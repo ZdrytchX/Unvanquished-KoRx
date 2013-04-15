@@ -45,10 +45,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define ABUILDER_BLOB_SPEED_MOD       0.5f
 #define ABUILDER_BLOB_TIME            2000
 
+//TODO: btl granger
+
 #define LEVEL0_BITE_DMG               ADM(36)
 #define LEVEL0_BITE_RANGE             64.0f
 #define LEVEL0_BITE_WIDTH             6.0f
 #define LEVEL0_BITE_REPEAT            500
+
+//TODO: adv dretch
 
 #define LEVEL1_CLAW_DMG               ADM(32)
 #define LEVEL1_CLAW_RANGE             80.0f // Claw and grab range normalized. Not sure on this one, but it was pretty widely requested.
@@ -67,6 +71,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define LEVEL1_REGEN_SCOREINC         AVM(100) // score added for healing per 10s
 #define LEVEL1_UPG_REGEN_SCOREINC     AVM(200)
 
+//TODO: Cloak
+
 #define LEVEL2_CLAW_DMG               ADM(40)
 #define LEVEL2_CLAW_RANGE             80.0f
 #define LEVEL2_CLAW_U_RANGE           LEVEL2_CLAW_RANGE + 2.0f
@@ -80,43 +86,47 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define LEVEL2_AREAZAP_MAX_TARGETS    5
 #define LEVEL2_WALLJUMP_MAXSPEED      1000.0f
 
+//TODO: "Area"zap
+
 #define LEVEL3_CLAW_DMG               ADM(80)
-#define LEVEL3_CLAW_RANGE             80.0f // Increased claw range
+#define LEVEL3_CLAW_RANGE             80.0f //
 #define LEVEL3_CLAW_UPG_RANGE         LEVEL3_CLAW_RANGE + 3.0f
 #define LEVEL3_CLAW_WIDTH             11.0f //
-#define LEVEL3_POUNCE_DMG             ADM(75) // Reduced damage. Pounce is very powerful as it is.
-#define LEVEL3_POUNCE_RANGE           55.0f // Pounce range raised by 7.0. May need to be nerfed, still want to test like this though.
+#define LEVEL3_POUNCE_DMG             ADM(75) //
+#define LEVEL3_POUNCE_RANGE           48.0f //
 #define LEVEL3_POUNCE_UPG_RANGE       LEVEL3_POUNCE_RANGE + 3.0f
-#define LEVEL3_POUNCE_WIDTH           12.0f // Pounce width narrowed. May scale this down even further.
-#define LEVEL3_POUNCE_TIME            800 // Reduced this by 100ms, may need nerfing.
-#define LEVEL3_POUNCE_TIME_UPG        800 // Evened with standard goon. I'd like to keep this here even if standard goon charge time is raised.
+#define LEVEL3_POUNCE_WIDTH           12.0f
+#define LEVEL3_POUNCE_TIME            800
+#define LEVEL3_POUNCE_TIME_UPG        800
 #define LEVEL3_POUNCE_TIME_MIN        200 // msec before which pounce cancels
 #define LEVEL3_POUNCE_REPEAT          400 // msec before a new pounce starts
 #define LEVEL3_POUNCE_SPEED_MOD       0.85f // Whales: Reduced the slowdown from a charged pounce by 0.10
-#define LEVEL3_POUNCE_JUMP_MAG        750 // Raised by 50,
-#define LEVEL3_POUNCE_JUMP_MAG_UPG    850 // Raised by 50.
+#define LEVEL3_POUNCE_JUMP_MAG        700
+#define LEVEL3_POUNCE_JUMP_MAG_UPG    800
 #define LEVEL3_BOUNCEBALL_DMG         ADM(110)
 #define LEVEL3_BOUNCEBALL_SPEED       1000.0f
 #define LEVEL3_BOUNCEBALL_RADIUS      75
-#define LEVEL3_BOUNCEBALL_REGEN       12500 // Reduced regen time.
+#define LEVEL3_BOUNCEBALL_REGEN       18000 //ZdrytchX: Most balanced between gpp/1.1 with the splash
 
 #define LEVEL4_CLAW_DMG               ADM(100)
 #define LEVEL4_CLAW_RANGE             100.0f
 #define LEVEL4_CLAW_WIDTH             14.0f
 #define LEVEL4_CLAW_HEIGHT            20.0f
 
-#define LEVEL4_TRAMPLE_DMG            ADM(85) // 111 -> 85
+#define LEVEL4_TRAMPLE_DMG            ADM(76) //Use gpp-1.1's value
 #define LEVEL4_TRAMPLE_SPEED          2.0f
 #define LEVEL4_TRAMPLE_CHARGE_MIN     375 // minimum msec to start a charge
 #define LEVEL4_TRAMPLE_CHARGE_MAX     1000 // msec to maximum charge stored
 #define LEVEL4_TRAMPLE_CHARGE_TRIGGER 3000 // msec charge starts on its own
 #define LEVEL4_TRAMPLE_DURATION       3000 // msec trample lasts on full charge
 #define LEVEL4_TRAMPLE_STOP_PENALTY   1 // charge lost per msec when stopped
-#define LEVEL4_TRAMPLE_REPEAT         300 // Time until charge rehits a player Ishq: 100->300
+#define LEVEL4_TRAMPLE_REPEAT         150 //Use GPP-1.1's value
 
 #define LEVEL4_CRUSH_DAMAGE_PER_V     0.5f // damage per falling velocity
 #define LEVEL4_CRUSH_DAMAGE           120 // to players only
 #define LEVEL4_CRUSH_REPEAT           500 // player damage repeat
+
+//TODO: aBlob/eBlob + advrant, Spitfire
 
 /*
  * ALIEN classes
@@ -146,21 +156,25 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define ABUILDER_UPG_REGEN   ( 0.04f * ABUILDER_UPG_HEALTH )
 #define ABUILDER_UPG_COST    0
 
+//TODO: Btl Grang
+
 #define LEVEL0_SPEED         1.4f
 #define LEVEL0_VALUE         AVM(180)
 #define LEVEL0_HEALTH        AHM(25)
 #define LEVEL0_REGEN         ( 0.05f * LEVEL0_HEALTH )
 #define LEVEL0_COST          0
 
+//TODO: Adv Dretch
+
 #define LEVEL1_SPEED         1.25f
 #define LEVEL1_VALUE         AVM(270)
-#define LEVEL1_HEALTH        AHM(60)
+#define LEVEL1_HEALTH        AHM(75)
 #define LEVEL1_REGEN         ( 0.03f * LEVEL1_HEALTH )
 #define LEVEL1_COST          1
 
 #define LEVEL1_UPG_SPEED     1.25f
 #define LEVEL1_UPG_VALUE     AVM(330)
-#define LEVEL1_UPG_HEALTH    AHM(80)
+#define LEVEL1_UPG_HEALTH    AHM(100)
 #define LEVEL1_UPG_REGEN     ( 0.03f * LEVEL1_UPG_HEALTH )
 #define LEVEL1_UPG_COST      1
 
@@ -190,9 +204,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #define LEVEL4_SPEED         1.1f // Lowered by .1
 #define LEVEL4_VALUE         AVM(960)
-#define LEVEL4_HEALTH        AHM(350)
+#define LEVEL4_HEALTH        AHM(375) //ZdrytchX: Use GPP-1.1's value, KoRx uses 400, Unv uses 350
 #define LEVEL4_REGEN         ( 0.025f * LEVEL4_HEALTH )
 #define LEVEL4_COST          2
+
+//TODO: Spitfire, Advrant
 
 /*
  * ALIEN buildables
@@ -255,7 +271,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define ALIEN_SPAWN_REPEAT_TIME  10000
 
 #define ALIEN_REGEN_DAMAGE_TIME  2000 //msec since damage that regen starts again
-#define ALIEN_REGEN_NOCREEP_MOD  ( 1.0f / 3.0f ) //regen off creep
+#define ALIEN_REGEN_NOCREEP_MOD  ( 1.0f / 1.5f ) //ZdrytchX: KoRx's kinda OP, use GPP-1.1's value
 
 #define ALIEN_MAX_FRAGS          9
 #define ALIEN_MAX_CREDITS        ( ALIEN_MAX_FRAGS * ALIEN_CREDITS_PER_KILL )
@@ -272,6 +288,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * HUMAN_WDMG_MODIFIER - overall damage modifier for coarse tuning
  *
  */
+//TODO: Someone removed the repeat rates?
 
 #define HUMAN_WDMG_MODIFIER      1.0f
 #define HDM(d) ((int)((float)d * HUMAN_WDMG_MODIFIER ))
@@ -282,7 +299,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define BLASTER_SIZE             5
 
 #define RIFLE_SPREAD             250 // Raised by 50.
-#define RIFLE_DMG                HDM(5)
+#define RIFLE_DMG                HDM(6)
 
 #define PAINSAW_DAMAGE           HDM(11)
 #define PAINSAW_RANGE            64.0f
@@ -297,32 +314,37 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define SHOTGUN_SPREAD           790
 #define SHOTGUN_DMG              HDM(5)
 #define SHOTGUN_RANGE            ( 8192 * 12 )
+//TODO: secondary launcher
 
 #define LASGUN_REPEAT            200
 #define LASGUN_K_SCALE           1.0f
 #define LASGUN_DAMAGE            HDM(9)
+//TODO: pmove/misc zoom
 
 #define MDRIVER_DMG              HDM(40)
 #define MDRIVER_REPEAT           1000
 #define MDRIVER_K_SCALE          1.0f
+//TODO: "Shoot through all entities"
 
 #define CHAINGUN_SPREAD          900
 #define CHAINGUN_DMG             HDM(6)
+//TODO: Secondary
 
-#define FLAMER_DMG               HDM(14) // 20->15->14
+#define FLAMER_DMG               HDM(14)
 #define FLAMER_FLIGHTSPLASHDAMAGE HDM(1)
-#define FLAMER_SPLASHDAMAGE      HDM(6) // 10->7->6
-#define FLAMER_RADIUS            25 //  Radius lowered by 25
-#define FLAMER_SIZE              15 // missile bounding box
-#define FLAMER_LIFETIME          750.0f // Raised by 50.
+#define FLAMER_SPLASHDAMAGE      HDM(14)
+#define FLAMER_RADIUS            50
+#define FLAMER_SIZE              12 //Don't hit yourself when touching a wall stupid.
+#define FLAMER_LIFETIME          750.0f
 #define FLAMER_SPEED             500.0f
 #define FLAMER_LAG               0.65f // the amount of player velocity that is added to the fireball
 
 #define PRIFLE_DMG               HDM(9)
 #define PRIFLE_SPEED             1200
 #define PRIFLE_SIZE              5
+//TODO: Secondary Slowlock
 
-#define LCANNON_DAMAGE           HDM(265)
+#define LCANNON_DAMAGE           HDM(245)
 #define LCANNON_RADIUS           150 // primary splash damage radius
 #define LCANNON_SIZE             5 // missile bounding box radius
 #define LCANNON_SECONDARY_DAMAGE HDM(30)
@@ -334,6 +356,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define LCANNON_CHARGE_TIME_MIN  100
 #define LCANNON_CHARGE_TIME_WARN 2000
 #define LCANNON_CHARGE_AMMO      10 // ammo cost of a full charge shot
+
+//TODO: Xael, Surge, Cloak, Biokit
 
 #define HBUILD_HEALRATE          18
 
@@ -355,14 +379,16 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define JETPACK_SINK_SPEED            192.0f //down movement speed
 #define JETPACK_DISABLE_TIME          1000 //time to disable the jetpack when player damaged
 #define JETPACK_DISABLE_CHANCE        0.3f
+//TODO: Smoothen out movement, add fuel limitations
 
 #define BSUIT_PRICE                   400
 #define BSUIT_POISON_PROTECTION       3
 #define BSUIT_PCLOUD_PROTECTION       3000
 
-#define MEDKIT_POISON_IMMUNITY_TIME   2000 // Added two second poison immunity from medkit.
+#define MEDKIT_POISON_IMMUNITY_TIME   10000
 #define MEDKIT_STARTUP_TIME           4000
 #define MEDKIT_STARTUP_SPEED          5
+//TODO: Human Regen
 
 /*
  * HUMAN buildables
@@ -374,16 +400,16 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #define REACTOR_BASESIZE          1000
 #define REPEATER_BASESIZE         500
-#define HUMAN_DETONATION_DELAY    5000
+#define HUMAN_DETONATION_DELAY    3000
 
 #define MGTURRET_RANGE            400.0
 #define MGTURRET_REPEAT           150.0
 #define MGTURRET_ANGULARSPEED     12
-#define MGTURRET_ACCURACY_TO_FIRE 0
-#define MGTURRET_VERTICALCAP      30 // +/- maximum pitch
+#define MGTURRET_ACCURACY_TO_FIRE 12
+#define MGTURRET_VERTICALCAP      45 // minimum pitch //To unv dev team: That stupid verticlecap bug still exists you nab.
 #define MGTURRET_SPREAD           200
 #define MGTURRET_DMG              HDM(8)
-#define MGTURRET_SPINUP_TIME      750 // time between target sighted and fire
+#define MGTURRET_SPINUP_TIME      200
 
 #define TESLAGEN_RANGE            250.0
 #define TESLAGEN_REPEAT           200.0
@@ -400,6 +426,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define REACTOR_ATTACK_DCC_RANGE  150.0f
 #define REACTOR_ATTACK_DCC_DAMAGE 40
 
+//TODO: Telenode Teleport, forcefield
+
 /*
  * HUMAN misc
  */
@@ -411,7 +439,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define HUMAN_DODGE_SIDE_MODIFIER     2.9f
 #define HUMAN_DODGE_SLOWED_MODIFIER   0.9f
 #define HUMAN_DODGE_UP_MODIFIER       0.5f
-#define HUMAN_DODGE_TIMEOUT           2500 // Reduced dodge cooldown.
+#define HUMAN_DODGE_TIMEOUT           1500 // Reduced dodge cooldown.
 #define HUMAN_LAND_FRICTION           3.0f
 
 #define STAMINA_STOP_RESTORE          30
@@ -431,7 +459,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define HUMAN_MAX_CREDITS             2000
 #define HUMAN_TK_SUICIDE_PENALTY      150
 
-#define HUMAN_BUILDER_SCOREINC        50 // builders receive this many points every 10 seconds
+#define HUMAN_BUILDER_SCOREINC        45 // builders receive this many points every 10 seconds
 #define ALIEN_BUILDER_SCOREINC        AVM(100) // builders receive this many points every 10 seconds
 
 #define HUMAN_BUILDABLE_INACTIVE_TIME 90000
@@ -448,12 +476,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define FREEKILL_ALIEN                     ALIEN_CREDITS_PER_KILL
 #define FREEKILL_HUMAN                     LEVEL0_VALUE
 
-#define DEFAULT_ALIEN_BUILDPOINTS          "150"
+#define DEFAULT_ALIEN_BUILDPOINTS          "200" //Not really, but generally KoRx servers have this on 200
 #define DEFAULT_ALIEN_QUEUE_TIME           "12000"
 #define DEFAULT_ALIEN_STAGE2_THRESH        "12000"
 #define DEFAULT_ALIEN_STAGE3_THRESH        "24000"
 #define DEFAULT_ALIEN_MAX_STAGE            "2"
-#define DEFAULT_HUMAN_BUILDPOINTS          "100"
+#define DEFAULT_HUMAN_BUILDPOINTS          "140" //Humans have reps, they'd overpower alien if they do so
 #define DEFAULT_HUMAN_QUEUE_TIME           "8000"
 #define DEFAULT_HUMAN_REPEATER_BUILDPOINTS "20"
 #define DEFAULT_HUMAN_REPEATER_QUEUE_TIME  "2000"
@@ -466,5 +494,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 //do to increment the stage kill counters
 
 #define MAXIMUM_BUILD_TIME                 20000 // used for pie timer
+
+//TODO: Vampire ESD, Skirmish
 
 #endif /* UNVANQUISHED_H_ */
