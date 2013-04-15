@@ -1,3 +1,18 @@
+ _   __               ____            Mod
+| | / /     ____     |  _ \   _    _  Third-"Person" (not party, well yet)
+| |/ /     / __ \    | |;_/   \ \ / / Porting Project
+| |-,\    | |  | |   | . \     \ V /
+| | \ \   | |__| |   | |\ \    / ^ \
+|_|  \_\   \____/    |_| \_\  /_/ \_\
+Initial Tremulous Mod Features list - http://knightsofreason.net/forums/viewtopic.php?f=11&t=7910&p=120448#p120647
+
+Site: http://knightsofreason.net/
+
+
+/*
+** Unvanquished README:
+*/
+
 Daemon Engine
 -------------
 
